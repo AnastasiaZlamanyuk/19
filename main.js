@@ -71,73 +71,128 @@
 //     console.log(row);
 // }
 
-function sum(a, b) {
-    return a + b;
+// function sum(a, b) {
+//     return a + b;
+// }
+// console.log(sum(3, 5));
+
+// function multiply(a, b) {
+//     return a * b;
+// }
+// console.log(multiply(3, 5));
+
+// function sayHello(name) {
+//     console.log(`Hello, ${name}`);
+// }
+// sayHello("Тимофей");
+
+// function printInfo(name, age) {
+//     console.log("Имя:", name);
+//     console.log("Возраст:", age);
+// }
+// printInfo("Настя", 20);
+// printInfo("Никита", 22);
+
+// function greet(name = "Гость") {
+//     console.log("Привет, " + name);
+// }
+// greet();
+// greet("Анастасия");
+
+// function calculateDiscount(price, discount = 10) {
+//     return price - (price * discount / 100);
+// }
+// console.log(calculateDiscount(1000));
+// console.log(calculateDiscount(1000, 20));
+// console.log(calculateDiscount(500, 5));
+
+// const add = function (a, b) {
+//     return a + b;
+// };
+// console.log(add(2, 3));
+
+// function makeCounter() {
+//     let count = 0;
+//     return function () {
+//         count++;
+//         return count;
+//     };
+// }
+// const counter = makeCounter();
+// console.log(counter());
+// console.log(counter());
+// console.log(counter());
+
+// function sumFunc(a, b) {
+//     return a + b;
+// }
+
+// const sumFunc2 = (a, b) => a + b;
+
+// const double = x => x * 2;
+
+// constsumFunc3 = (a, b) => a + b;
+
+// constsayGreeting = () => console.log("Hello");
+
+// const square = x => x * x;
+
+// const calculate = (a, b) => {
+//     let result = a + b;
+//     return result * 2;
+// }
+
+let numbersArr = [1, 2, 3, 4, 5];
+console.log(numbersArr);
+
+console.log(numbersArr[0]);
+console.log(numbersArr[1]);
+
+let colors = ["красный", "зелёный", "синий"];
+console.log("Первый элемент:", colors[0]);
+console.log("Последний элемент:", colors[2]);
+colors[1] = "жёлтый";
+console.log("Изменённый массив:", colors);
+
+console.log(numbersArr.length);
+
+numbersArr.push(10);
+console.log(numbersArr);
+
+numbersArr.pop();
+console.log(numbersArr);
+
+let students = [];
+students.push("Вадим");
+students.push("Влад");
+students.push("Лиза");
+students.pop();
+console.log(students);
+
+let numbers2 = [10, 20, 30];
+for (let i = 0; i < numbers2.length; i++) {
+    console.log(numbers2[i]);
 }
-console.log(sum(3, 5));
 
-function multiply(a, b) {
-    return a * b;
-}
-console.log(multiply(3, 5));
-
-function sayHello(name) {
-    console.log(`Hello, ${name}`);
-}
-sayHello("Тимофей");
-
-function printInfo(name, age) {
-    console.log("Имя:", name);
-    console.log("Возраст:", age);
-}
-printInfo("Настя", 20);
-printInfo("Никита", 22);
-
-function greet(name = "Гость") {
-    console.log("Привет, " + name);
-}
-greet();
-greet("Анастасия");
-
-function calculateDiscount(price, discount = 10) {
-    return price - (price * discount / 100);
-}
-console.log(calculateDiscount(1000));
-console.log(calculateDiscount(1000, 20));
-console.log(calculateDiscount(500, 5));
-
-const add = function (a, b) {
-    return a + b;
-};
-console.log(add(2, 3));
-
-function makeCounter() {
-    let count = 0;
-    return function () {
-        count++;
-        return count;
-    };
-}
-const counter = makeCounter();
-console.log(counter());
-console.log(counter());
-console.log(counter());
-
-function sumFunc(a, b) {
-    return a + b;
+for (let value of numbers2) {
+    console.log(value);
 }
 
-const sumFunc2 = (a, b) => a + b;
+let mixedArray = [1, "text", true, 3.14];
+console.log(mixedArray);
 
-const double = x => x * 2;
+console.log(numbersArr.includes(1));
+console.log(numbersArr.index0f(2));
 
-constsumFunc3 = (a, b) => a + b;
+console.log(fruits.includes("яблоко"));
+console.log(fruits.includes("манго"));
 
-constsayGreeting = () => console.log("Hello");
-
-const square = x => x * x;
-
-const calculate = (a, b) => {
-    let result = a + b;
-    return result * 2;
+let cities = ["Москва", "Санкт-Петербург", "Казань", "Новосибирск", "Екатеринбург"];
+let searchCity = "Казань";
+let index = cities.indexOf(searchCity);
+if (index !== -1) {
+    console.log(`Город "${searchCity}" найден! Индекс: ${index}`);
+} else {
+    console.log(`Город "${searchCity}" не найден в массиве`);
 }
+
