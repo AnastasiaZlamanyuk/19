@@ -142,57 +142,120 @@
 //     return result * 2;
 // }
 
-let numbersArr = [1, 2, 3, 4, 5];
-console.log(numbersArr);
+// let numbersArr = [1, 2, 3, 4, 5];
+// console.log(numbersArr);
 
-console.log(numbersArr[0]);
-console.log(numbersArr[1]);
+// console.log(numbersArr[0]);
+// console.log(numbersArr[1]);
 
-let colors = ["красный", "зелёный", "синий"];
-console.log("Первый элемент:", colors[0]);
-console.log("Последний элемент:", colors[2]);
-colors[1] = "жёлтый";
-console.log("Изменённый массив:", colors);
+// let colors = ["красный", "зелёный", "синий"];
+// console.log("Первый элемент:", colors[0]);
+// console.log("Последний элемент:", colors[2]);
+// colors[1] = "жёлтый";
+// console.log("Изменённый массив:", colors);
 
-console.log(numbersArr.length);
+// console.log(numbersArr.length);
 
-numbersArr.push(10);
-console.log(numbersArr);
+// numbersArr.push(10);
+// console.log(numbersArr);
 
-numbersArr.pop();
-console.log(numbersArr);
+// numbersArr.pop();
+// console.log(numbersArr);
 
-let students = [];
-students.push("Вадим");
-students.push("Влад");
-students.push("Лиза");
-students.pop();
-console.log(students);
+// let students = [];
+// students.push("Вадим");
+// students.push("Влад");
+// students.push("Лиза");
+// students.pop();
+// console.log(students);
 
-let numbers2 = [10, 20, 30];
-for (let i = 0; i < numbers2.length; i++) {
-    console.log(numbers2[i]);
+// let numbers2 = [10, 20, 30];
+// for (let i = 0; i < numbers2.length; i++) {
+//     console.log(numbers2[i]);
+// }
+
+// for (let value of numbers2) {
+//     console.log(value);
+// }
+
+// let mixedArray = [1, "text", true, 3.14];
+// console.log(mixedArray);
+
+// console.log(numbersArr.includes(1));
+// console.log(numbersArr.index0f(2));
+
+// console.log(fruits.includes("яблоко"));
+// console.log(fruits.includes("манго"));
+
+// let cities = ["Москва", "Санкт-Петербург", "Казань", "Новосибирск", "Екатеринбург"];
+// let searchCity = "Казань";
+// let index = cities.indexOf(searchCity);
+// if (index !== -1) {
+//     console.log(`Город "${searchCity}" найден! Индекс: ${index}`);
+// } else {
+//     console.log(`Город "${searchCity}" не найден в массиве`);
+// }
+
+let user2 = {
+    name: "Ivan",
+    age: 20,
+    isStudent: true,
+    sayHello: function () {
+        console.log(`Hello, my name is ${name}`);
+    },
+};
+user2.sayHello();
+
+console.log(user2);
+
+console.log(user2.name);
+console.log(user2.age);
+
+console.log(user2["name"]);
+
+let book = {
+    title: "Океан в конце дороги",
+    author: "Нил Гейман",
+    year: 2013
+};
+console.log(book.title, book.author, book.year);
+book.year = 2012;
+console.log(book.title, book.author, book.year);
+
+user2.age = 30;
+user2.name = "Кирилл";
+delete user2.isStudent;
+console.log(user2);
+
+let car = {
+    brand: "Toyota",
+    year: 2022,
+    getInfo: function () {
+        console.log(`Автомобиль: ${this.brand}, Год выпуска: ${this.year}`);
+    }
+};
+car.getInfo();
+
+for (let key in user2) {
+    console.log(key + ":" + user2[key]);
 }
 
-for (let value of numbers2) {
-    console.log(value);
+let product = {
+    name: "Молоко",
+    brand: "Простоквашино",
+    price: 80
+};
+for (let key in product) {
+    console.log(key + ":" + product[key]);
 }
 
-let mixedArray = [1, "text", true, 3.14];
-console.log(mixedArray);
-
-console.log(numbersArr.includes(1));
-console.log(numbersArr.index0f(2));
-
-console.log(fruits.includes("яблоко"));
-console.log(fruits.includes("манго"));
-
-let cities = ["Москва", "Санкт-Петербург", "Казань", "Новосибирск", "Екатеринбург"];
-let searchCity = "Казань";
-let index = cities.indexOf(searchCity);
-if (index !== -1) {
-    console.log(`Город "${searchCity}" найден! Индекс: ${index}`);
-} else {
-    console.log(`Город "${searchCity}" не найден в массиве`);
-}
-
+let student = {
+    name: "Григорий",
+    skills: ["HTML", "CSS", "JS"],
+    address: {
+        city: "Волжский",
+        street: "Пушкина",
+    },
+};
+console.log(student.skills[0]);
+console.log(student.address.city);
